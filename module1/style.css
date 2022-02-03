@@ -5,6 +5,9 @@ body {
     margin-left: auto;
     margin-right: auto;
 }
+h1 {
+    display: none;
+}
 header {
     max-width: 1248px;
     max-height: 110px;
@@ -60,7 +63,6 @@ font-family: "Ubuntu";
 .aboutSectionText {
 max-width: 350px;
 margin: 50px 0 ;
-font-family: Avenir;
 font-style: normal;
 font-weight: 500;
 font-size: 18px;
@@ -539,7 +541,6 @@ color: #212353;
     display: inline-block;
     margin-right: 15px;
 }
-
 @media (min-width: 1201px) and (max-width: 1440px) {
     html, body, header, main {
         max-width: 100%;
@@ -665,7 +666,7 @@ color: #212353;
     @media (min-width: 481px) and (max-width: 768px) {
         html {
 font-size: 18px;
-max-width: 100%
+max-width: 768px;
         }
         body, header, main {
             max-width: 100%;
@@ -715,13 +716,19 @@ max-width: 100%
             font-size: 30px;
         }
         .reviews {
-          min-width: auto;
+            min-width: 90%;
         overflow-x: visible;
         overflow-y: visible;
+        margin-left: auto;
+        margin-right: auto;
      }
      .reviewCardOne {
-        flex-grow: 0;
+        width: 340px;
      }
+     .reviewCardOne > div:nth-child(2) > p:nth-child(1) {
+         margin-top: 10px;
+     }
+ 
     .reviewCardThree, .reviewCardTwo {
         display: none;
     }
@@ -764,8 +771,24 @@ font-size: 18px;
             margin-left:  auto;
             margin-right: auto;
         }
+        .case {
+            max-width: 480px; 
+            display: flex;
+            flex-direction: column;
+        }
+        .case div:nth-child(1) {
+            justify-content: center;
+        }
+        .case div:nth-child(1) img{
+max-width: 40%;
+
+        }
+        .caseText > p:nth-child(1) {
+            margin-top: 5px;
+        }
         .caseText {
             margin: 0;
+            max-width: 100%;
         }
         .infoChildContainer {
             flex-wrap: wrap;
@@ -792,8 +815,8 @@ font-size: 18px;
         overflow-y: visible;
      }
      .reviewCardOne {
-        flex-grow: 0;
-        max-width: 360px;
+        max-width: 90%;
+        height: 360px;
      }
      .reviewCardOne > div:nth-child(2) > p:nth-child(3) {
          font-size: 16px;
@@ -803,15 +826,20 @@ font-size: 18px;
      }
      .reviewCardOne > div > img {
         margin-left: 35px;
-        margin-right: 35px;
         margin-top: 20px;
      }
      .reviewCardOne > div:nth-child(2) {
-         max-width: 150px;
+         width: 100%;
          max-height: 330px;
      }
     .reviewCardThree, .reviewCardTwo {
         display: none;
+    }
+    .circles {
+        margin-left: 0;
+    }
+    .arrows {
+        margin-right: 0;
     }
     .warehouse { 
         max-width: 480px;
@@ -825,7 +853,7 @@ font-size: 18px;
     .social > p {
         font-size: 18px;
     }
-    }
+     }
     @media (max-width: 320px) {
         html {
             max-width: 100%;
@@ -838,7 +866,7 @@ font-size: 18px;
             margin-left: 0;
         }
         .logo {
-            margin-left: 15px;
+            margin-left: 10px;
         }
         .aboutText {
             margin-left: 15px;
@@ -918,7 +946,6 @@ margin: auto auto 20px auto;
         overflow-y: visible;
      }
      .reviewCardOne {
-        flex-grow: 0;
         max-width: 80%;
         height: 370px;
         flex-direction: column;
