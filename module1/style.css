@@ -190,7 +190,7 @@ align-items: center;
     max-width: 220px;
     margin-left: 30px;
 }
-.caseText > p:nth-child(1) {
+.caseText > h2 {
     font-style: normal;
 font-weight: normal;
 font-size: 24px;
@@ -228,7 +228,7 @@ flex-direction: column;
 margin-bottom: 315px;
 
   }
-  .testimonials > p {
+  .testimonials > h3 {
       display: block;
       margin-top: 110px;
       margin-left: 93px;
@@ -492,7 +492,7 @@ max-width: 260px;
 .warehouse > a {
 display: inline-block;
 }
-.warehouse > p:nth-child(2) {
+.warehouse > h3 {
 display: inline-block;
 margin-left: 20px;
 font-style: normal;
@@ -648,7 +648,7 @@ color: #212353;
             margin-left:  auto;
             margin-right: auto;
         }
-        .testimonials > p {
+        .testimonials > h3 {
             font-size: 30px;
         }
         .reviews {
@@ -712,7 +712,7 @@ max-width: 768px;
             margin-left:  auto;
             margin-right: auto;
         }
-        .testimonials > p {
+        .testimonials > h3 {
             font-size: 30px;
         }
         .reviews {
@@ -731,6 +731,9 @@ max-width: 768px;
  
     .reviewCardThree, .reviewCardTwo {
         display: none;
+    }
+    .testimonials {
+        margin-bottom: 75px;
     }
     }
     @media (min-width: 321px) and (max-width: 480px) {
@@ -758,11 +761,15 @@ font-size: 18px;
         }
         .aboutSectionText {
             max-width: 100%;
+        }
+        .bntAbout {
+            display: block;
+            margin: auto;
             text-align: center;
         }
         .aboutContainer {
-            background-size: 60%;
-            height: 450px;
+            background-size: 100%;
+            height: 630px;
         }
         .casesContainer {
             justify-content: space-around;
@@ -783,7 +790,7 @@ font-size: 18px;
 max-width: 40%;
 
         }
-        .caseText > p:nth-child(1) {
+        .caseText > h2 {
             margin-top: 5px;
         }
         .caseText {
@@ -806,7 +813,7 @@ max-width: 40%;
         .infoText >p:nth-child(2) {
             margin-bottom: 35px;
         }
-        .testimonials > p {
+        .testimonials > h3 {
             font-size: 30px;
         }
         .reviews {
@@ -841,10 +848,13 @@ max-width: 40%;
     .arrows {
         margin-right: 0;
     }
+    .testimonials {
+        margin-bottom: 50px;
+    }
     .warehouse { 
         max-width: 480px;
     }
-    .warehouse > p:nth-child(2){
+    .warehouse > h3 {
         font-size: 24px;
     }
     .warehouse > p:nth-child(3), .warehouse > p:nth-child(4){
@@ -867,9 +877,6 @@ font-size: 18px;
         }
         .logo {
             margin-left: 10px;
-        }
-        .aboutText {
-            margin-left: 15px;
         }
         .aboutSectionTitle {
             font-size: 50px;
@@ -913,7 +920,7 @@ margin: auto auto 20px auto;
             margin-left: 0;
             max-width: 100%;
         }
-        .caseText > p:nth-child(1) {
+        .caseText > h2 {
             margin: 0;
         }
         .caseText > p:nth-child(2) {
@@ -935,7 +942,7 @@ margin: auto auto 20px auto;
         .infoText >p:nth-child(2) {
             margin-bottom: 35px;
         }
-        .testimonials > p {
+        .testimonials > h3 {
             font-size: 30px;
             margin: 50px auto 50px auto;
         }
@@ -977,10 +984,13 @@ margin: 30px auto 5px auto;
     .circles, .arrows {
         margin: 35px auto 0 auto;
     }
+    .testimonials {
+        margin-bottom: 50px;
+    }
     .warehouse { 
         max-width: 100%;
     }
-    .warehouse > p:nth-child(2){
+    .warehouse > h3 {
         font-size: 24px;
     }
     .warehouse > p:nth-child(3), .warehouse > p:nth-child(4){
