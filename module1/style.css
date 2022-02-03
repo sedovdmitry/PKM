@@ -1,35 +1,36 @@
 body {
-    max-width: 1920px;
+    max-width: 1248px;
     margin: 0;
     font-family: "Ubuntu";
-    display: flex;
+    margin-left: auto;
+    margin-right: auto;
 }
 header {
     max-width: 1248px;
     max-height: 110px;
-    flex-grow: 1;
-    margin-left: auto;
-    margin-right: auto;
+
 }
 a {
     text-decoration: none;
 }
 .headerContainer {
 width: 100%;
-display: inline-block;
+
 }
 .headerContainer > a {
     font-weight: 700;
     line-height: 160%;
-    margin-right: 40px;
     color: #4B5D68;
+}
+.navigation {
+    margin-left: 40px;
 }
 .navigation:nth-child(2) {
     font-weight: bold;
     color: #212353;
 }
 .logo {
-    margin-right: 5%;
+    margin-right: 10%;
     margin-top: 5%;
 }
 main {
@@ -40,7 +41,7 @@ main {
 .aboutContainer {
     width: 100%;
     height: 560px;
-    background-image: url('/image/bg_about.png');
+    background-image: url('./image/bg_about.png');
     background-repeat: no-repeat;
     background-position: right bottom;
 
@@ -89,7 +90,7 @@ font-family: "Ubuntu";
 .infoImage {
     max-width: 470px;
     height: 560px;
-    background-image: url('/image/bg_infoText.png');
+    background-image: url('./image/bg_infoText.png');
     background-position: center;
     background-repeat: no-repeat;
     background-size: 100%;
@@ -154,22 +155,22 @@ margin-bottom: 50px;
     margin-bottom: 100px;
 }
 .caseOne {
-    background-image: url('/image/frame1.png');
+    background-image: url('./image/frame1.png');
 background-repeat: no-repeat;
 background-position: right bottom;
 }
 .caseTwo {
-    background-image: url('/image/frame2.png');
+    background-image: url('./image/frame2.png');
 background-repeat: no-repeat;
 background-position: right bottom;
 }
 .caseThree {
-    background-image: url('/image/frame3.png');
+    background-image: url('./image/frame3.png');
 background-repeat: no-repeat;
 background-position: right bottom;
 }
 .caseFour {
-background-image: url('/image/frame4.png');
+background-image: url('./image/frame4.png');
 background-repeat: no-repeat;
 background-position: right bottom;
 }
@@ -211,7 +212,7 @@ margin: 20px 0;
     color: #212353;
  }
 .case a span {
-    content: url('/image/linkPoint.png');
+    content: url('./image/linkPoint.png');
     vertical-align: middle;
     margin-left: 20px;
   }
@@ -431,7 +432,7 @@ margin-left: 93px;
 vertical-align: middle;
 background-repeat: no-repeat;
 background-position: center;
-background-image: url('/image/circleDanger.png');
+background-image: url('./image/circleDanger.png');
 }
 .calm {
     visibility: visible;
@@ -442,7 +443,7 @@ background-image: url('/image/circleDanger.png');
 vertical-align: middle;
 background-repeat: no-repeat;
 background-position: center;
-background-image: url('/image/circleCalm.png');
+background-image: url('./image/circleCalm.png');
 }
 .btnArrow {
     visibility: collapse;
@@ -456,7 +457,7 @@ background-image: url('/image/circleCalm.png');
 vertical-align: middle;
 background-repeat: no-repeat;
 background-position: center;
-background-image: url('/image/arrLeft.png');
+background-image: url('./image/arrLeft.png');
 }
 .disabledArrowRight {
     visibility: visible;
@@ -467,7 +468,7 @@ background-image: url('/image/arrLeft.png');
 vertical-align: middle;
 background-repeat: no-repeat;
 background-position: center;
-background-image: url('/image/arrRight.png');
+background-image: url('./image/arrRight.png');
 }
 .arrows {
 margin-top: 40px;
@@ -727,16 +728,20 @@ max-width: 100%
     }
     @media (min-width: 321px) and (max-width: 480px) {
         html {
-            max-width: 100%;
+            max-width: 480px;
 font-size: 18px;
         }
         body, header, main {
             max-width: 100%;
         }
+        .navigation {
+            margin-left: 5px;
+        }
         .logo {
             margin-left: 15px;
         }
         .aboutText {
+             max-width: 480px;
             margin-left: 15px;
         }
         .aboutSectionTitle {
@@ -829,6 +834,9 @@ font-size: 18px;
         body, header, main {
             max-width: 100%;
         }
+        .navigation {
+            margin-left: 0;
+        }
         .logo {
             margin-left: 15px;
         }
@@ -841,7 +849,7 @@ font-size: 18px;
             text-align: center;
         }
         .headerContainer > a {
-            margin-right: 10px;
+            margin-right: 5px;
         }
         .aboutSectionText {
             max-width: 100%;
