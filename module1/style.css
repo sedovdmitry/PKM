@@ -1,6 +1,8 @@
 body {
     max-width: 1248px;
+/* TODO: замените все свойства margin в этом блоке на "margin: 0 auto;" Будет 1 строка, а не 3 */
     margin: 0;
+/* TODO: не указано семейство шрифтов, здесь нужно font-family: "Ubuntu", sans-serif */
     font-family: "Ubuntu";
     margin-left: auto;
     margin-right: auto;
@@ -13,6 +15,7 @@ header {
     max-height: 110px;
 
 }
+/* TODO: неформатированный код, отступы неправильны по всему файлу */
 a {
     text-decoration: none;
 }
@@ -58,6 +61,7 @@ font-weight: bold;
 font-size: 80px;
 line-height: 110%;
 color: #212353;
+/* TODO: шрифт уже указан для body, удалите */
 font-family: "Ubuntu";
 }
 .aboutSectionText {
@@ -68,7 +72,8 @@ font-weight: 500;
 font-size: 18px;
 line-height: 160%;
 color: #4B5D68;
-font-family: "Ubuntu";  
+/* TODO: шрифт уже указан для body, удалите */
+font-family: "Ubuntu";
 }
 .bntAbout {
     padding: 15px 35px;
@@ -76,6 +81,7 @@ font-family: "Ubuntu";
     border-radius: 50px;
     border: none;
     color: white;
+/* TODO: шрифт уже указан для body, удалите */
     font-family: "Ubuntu";
 }
 .infoContainer {
@@ -218,7 +224,7 @@ margin: 20px 0;
     vertical-align: middle;
     margin-left: 20px;
   }
-.testimonials { 
+.testimonials {
     width: 90%;
   background: #9C69E2;
 border-radius: 50px;
@@ -253,6 +259,7 @@ margin-bottom: 315px;
       margin-right: 20px;
       display: flex;
       background-color: white;
+/* TODO: нет необходимости указывать единицы измерения для нулей, заменить 0px -> 0 */
       box-shadow: 0px 20px 0px rgba(102, 44, 184, 0.3);
 border-radius: 20px;
 flex-grow: 1;
@@ -261,6 +268,8 @@ flex-shrink: 0;
   .reviewCardOne > div {
       display: inline-block;
   }
+/* TODO: плохие селекторы, небольшое изменение в HTML и придется переделывать, лучше
+    указать для div подходящий class и работать с ним  */
 .reviewCardOne > div:nth-child(1) {
 width: 190px;
 height: 330px;
@@ -269,10 +278,14 @@ height: 330px;
     margin-left: 70px;
     margin-top: 60px;
 }
+/* TODO: плохие селекторы, небольшое изменение в HTML и придется переделывать, лучше
+    указать для div подходящий class и работать с ним  */
 .reviewCardOne > div:nth-child(2) {
     width: 385px;
     height: 200px;
 }
+/* TODO: плохие селекторы, небольшое изменение в HTML и придется переделывать, лучше
+    указать для p подходящий class и работать с ним  */
 .reviewCardOne > div:nth-child(2) > p:nth-child(1) {
     font-style: normal;
     font-weight: 700;
@@ -282,6 +295,8 @@ height: 330px;
     color: #212353;
     margin: 80px 0 0 0 ;
 }
+/* TODO: плохие селекторы, небольшое изменение в HTML и придется переделывать, лучше
+    указать для p подходящий class и работать с ним  */
 .reviewCardOne > div:nth-child(2) > p:nth-child(2) {
     font-style: normal;
 font-weight: 500;
@@ -291,8 +306,9 @@ letter-spacing: 0.01em;
 color: #9C69E2;
 margin: 0 0 20px 0;
 }
-
-.reviewCardOne > div:nth-child(2) > p:nth-child(3) { 
+/* TODO: плохие селекторы, небольшое изменение в HTML и придется переделывать, лучше
+    указать для p подходящий class и работать с ним  */
+.reviewCardOne > div:nth-child(2) > p:nth-child(3) {
 font-style: normal;
 font-weight: normal;
 font-size: 18px;
@@ -346,7 +362,7 @@ color: #9C69E2;
 margin: 0 0 20px 0;
 }
 
-.reviewCardTwo > div:nth-child(2) > p:nth-child(3) { 
+.reviewCardTwo > div:nth-child(2) > p:nth-child(3) {
 font-style: normal;
 font-weight: normal;
 font-size: 18px;
@@ -403,7 +419,7 @@ color: #9C69E2;
 margin: 0 0 20px 0;
 }
 
-.reviewCardThree > div:nth-child(2) > p:nth-child(3) { 
+.reviewCardThree > div:nth-child(2) > p:nth-child(3) {
 font-style: normal;
 font-weight: normal;
 font-size: 18px;
@@ -583,7 +599,7 @@ color: #212353;
         }
         .aboutSectionTitle {
             font-size: 60px;
-        } 
+        }
         .casesContainer {
             justify-content: space-around;
         }
@@ -728,7 +744,7 @@ max-width: 768px;
      .reviewCardOne > div:nth-child(2) > p:nth-child(1) {
          margin-top: 10px;
      }
- 
+
     .reviewCardThree, .reviewCardTwo {
         display: none;
     }
@@ -779,7 +795,7 @@ font-size: 18px;
             margin-right: auto;
         }
         .case {
-            max-width: 480px; 
+            max-width: 480px;
             display: flex;
             flex-direction: column;
         }
@@ -851,7 +867,7 @@ max-width: 40%;
     .testimonials {
         margin-bottom: 50px;
     }
-    .warehouse { 
+    .warehouse {
         max-width: 480px;
     }
     .warehouse > h3 {
@@ -987,7 +1003,7 @@ margin: 30px auto 5px auto;
     .testimonials {
         margin-bottom: 50px;
     }
-    .warehouse { 
+    .warehouse {
         max-width: 100%;
     }
     .warehouse > h3 {
